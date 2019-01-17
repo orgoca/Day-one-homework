@@ -10,17 +10,17 @@ vegetables = [
 #loop through each vegetable
 
 for vegetable in vegetables:
-    
+	
 #write the vegetable to a CSV file
 
 import csv
 
 with open('vegetables.csv', 'w') as f:
-    writer = csv.writer(f)  
-    #write header
-    writer.writerow(['name', 'color'])
-    #write data
-    for vegetable in vegetables:
-        name = vegetable['name']
-        color = vegetable['color']
-        writer.writerow([name,color])
+	writer = csv.writer(f)  
+	#write header
+	writer.writerow(['name', 'color'])
+	#write data
+	for vegetable in vegetables:
+		name = vegetable['name']
+		color = vegetable['color']
+		writer.writerow([name,color])
